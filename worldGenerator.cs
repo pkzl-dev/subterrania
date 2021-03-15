@@ -5,7 +5,69 @@ using System.Threading;
 namespace generation {
 
     public class worldGenerator {
+		
+		public string[,] caveSmoothing(string[,] world, int width, int height) {
+            string[,] check = new string[3, 3];
+            for (int x = 1; x < width; x++) {
+                // arbitrary height definition
+                // i am a nimrod ^
+                for (int y = 1; y < height; y++) {
+                    // get 3x3 square around thing
+                    check[0, 0] = world[x-1, y-1];
+                    check[0, 1] = world[x-1, y];
+                    check[0, 2] = world[x-1, y+1];
+                    check[1, 0] = world[x, y-1];
+                    check[1, 1] = world[x, y];
+                    check[1, 2] = world[x, y+1];
+                    check[2, 0] = world[x+1, y-1];
+                    check[2, 1] = world[x+1, y];
+                    check[2, 2] = world[x+1, y+1];
+                    
+                    int ore = 0;
+                    int stone = 0;
+                    // remove singular ores
+                    if (check[1, 1] == "@") {
+                        foreach (string t in check) {
+                            if (t == "@") {
+                                ore++;
+                            }
+                        }
+                        // there must be 2 other ore pieces (NOT INCLUDING WORLD[1, 1])
+                        // passes:  fails:
+                        // XX@      XX@
+                        // X@@      X@X
+                        // XXX      XXX
+                        
+                        if (ore - 1 < 2)
+                        {
+                            world[x, y] = "X";
+                        }
+                    }
 
+                    if (check[1, 1] == "X") {
+                        foreach (string t in check) {
+                            if (t == "X") {
+                                stone++;
+                            }
+                        }
+                        // there must be 3 other stone pieces
+                        // passes:  fails:
+                        // XXX      _XX
+                        // _X_      _X_
+                        // ___      ___
+                        
+                        if (stone - 1 < 3) {
+                            world[x, y] = "_";
+                        }
+                        
+                        //Console.WriteLine($"stone num: {stone}, world before: {check[1, 1]}, world (changed to): {world[x, y]}");
+                    }
+                }
+            }
+            Console.WriteLine("cave smoothing complete");
+            return world;
+        }
+		
         public string[,] stonePasser(int width, int height) {
 
             string[,] output = new string[width+2, height+2];
@@ -188,6 +250,7 @@ namespace generation {
             world = n.cavesPasser(world);
             world = n.caveSeeder(world, 0);
             world = n.oceanPasser(world, 0.04);
+			world = n.caveSmoothing(world, 200, 15000);
             for(int i = 0; i < world.GetLength(1); i++) {
 
                 for(int j = 0; j < world.GetLength(0); j++) {
