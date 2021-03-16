@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace generation.world
+namespace subterrania.world
 {
     public class caves
     {

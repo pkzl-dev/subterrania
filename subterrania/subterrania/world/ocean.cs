@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace generation.world
+namespace subterrania.world
 {
     public class ocean
     {
