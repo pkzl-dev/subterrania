@@ -1,0 +1,13 @@
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.csprojAssemblyReference.cache
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.AssemblyInfoInputs.cache
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.AssemblyInfo.cs
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.csproj.CoreCompileInputs.cache
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.exe
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.deps.json
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.runtimeconfig.json
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.runtimeconfig.dev.json
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.dll
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\bin\Debug\netcoreapp3.1\noiseGeneratorTests.pdb
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.dll
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.pdb
+C:\Users\e4mis\source\repos\noiseGeneratorTests\noiseGeneratorTests\obj\Debug\netcoreapp3.1\noiseGeneratorTests.genruntimeconfig.cache
